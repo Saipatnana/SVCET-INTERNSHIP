@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  margin: 0px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    130deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(101, 67, 243, 1) 100%
+  );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'poppins';
+}
+.main-container {
+  border-radius: 20px;
+  background-color: black;
+  width: 70%;
+  height:70%;
+  background-image: url(./images/pixelcut-export.png);
+  background-size: cover;
+  background-position-x: 125px;
+  background-position-y: -40px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding: 20px 70px 20px  50px;
+  -webkit-box-shadow: -6px 10px 27px -22px rgba(41, 30, 135,0.58);
+-moz-box-shadow: -6px 59px 27px -22px rgba(41, 30, 135,0.58);
+box-shadow: -6px 59px 27px -22px rgba(41, 30, 135,0.58);
+}
+.logo-continar{
+    display: flex;
+    align-items: center;
+}
+.logo-continar h1{
+    margin: 0px;
+    
+    line-height: 20px;
+}
+nav{
+    display: flex;
+    align-self:center;
+    justify-content: space-between;
+}
+.nav-menu{
+    display:flex;
+    align-items: center;
+}
+.nav-menu ul{
+    list-style: none;
+    display: flex;
+}
+.nav-menu ul li{
+    margin: 0px 15px;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+.nav-menu button{
+    border-width: 0px;
+    border-radius: 40px;
+    color: white;
+    padding: 7px 30px;
+    background-color: #4f51fb;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: 'poppins';
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all transform 0.3s ease;
+    transition-duration: 0.2s;
+}
+.nav-menu button:hover{
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+.nav-menu i{
+    color: white;
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+main{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.left-section{
+    padding-left: 20px;
+    width: 50%;
+}
+.left-section h1{
+    font-size: 80px;
+    margin: 10px;
+}
+.serach-container{
+    border: 2px solid white;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    width: 335px;
+}
+.serach-container input{
+    background-color: transparent;
+    outline: none;
+    border-width: 0px;
+    width: 100%;
+    color: white;
+    font-size:20px;
+}
+.serach-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+}
+.btn-conatiner{
+    margin-top: 50px;
+}
+.btn-1{
+    border: 1px solid #0aa2fb;
+    border-radius: 40px;
+    color: white;
+    background-color: #0aa2fb;
+    padding: 8px 15px;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+.btn-2{
+    border: 1px solid #ffffff;
+    border-radius: 40px;
+    padding: 8px 15px;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: transparent;
+    color: white;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.right-section{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+.right-section h1{
+    font-weight: normal;
+    margin:15px;
+    margin-top: 60px;
+
+}
+.right-section p{
+    width: 260px;
+    font-size: 10px;
+}
