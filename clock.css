@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 body {
   display: flex;
   align-items: center;
@@ -9,23 +10,28 @@ body {
   overflow: hidden;
   color: #fefefe;
 }
+
 * {
   font-family: "Poppins";
   margin: 0;
   padding: 0;
 }
+
 main {
-  width: 35%;
+  width: 45%;
   padding: 20px;
   position: relative;
 }
+
 main h1 {
   font-size: 40px;
 }
+
 main p {
   text-align: right;
   margin-bottom: 70px;
 }
+
 .clock-header {
   position: relative;
   transform-style: preserve-3d;
@@ -33,7 +39,9 @@ main p {
   background-color: #2c2d43;
   padding: 25px;
   text-align: center;
+  animation: shadowChange 1s infinite steps(60);
 }
+
 .clock-header::before {
   content: "";
   position: absolute;
@@ -62,23 +70,41 @@ main p {
   border-radius: inherit;
   pointer-events: none;
 }
-.clock-header h1{
-    font-size: 100px;
-    color: #929294;
+
+.clock-header h1 {
+  font-size: 100px;
+  color: #929294;
 }
-.clock-header h1 .hr{
+
+.clock-header h1 .hr {
   background: -webkit-linear-gradient(#68b3ec, #616df6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
 }
-.clock-header h1 .min{
-    background: -webkit-linear-gradient(#f2a773, #f37889);
+
+.clock-header h1 .min {
+  background: -webkit-linear-gradient(#f2a773, #f37889);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.time-zon{
-    background: -webkit-linear-gradient(#00ff33, #208706);
+
+.clock-header h1 .sec {
+  background: -webkit-linear-gradient(#f79d03, #ffd700);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.time-zon {
+  background: -webkit-linear-gradient(#00ff33, #208706);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes shadowChange {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(255, 255, 255, 1);
+  }
 }
