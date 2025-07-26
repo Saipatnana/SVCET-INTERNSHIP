@@ -1,0 +1,57 @@
+--> What is AI:- 
+    Artifcial intelligence (Al) refers to the development of computer systems that can perform tasks that typically require human intelligence, such as visual perception, speech recognition, decision- making, and language translation. It is best described as a particularly advanced algorithm.
+
+--> What ChatGPT can do:
+1.Coding
+2.800k
+3.Summarisation
+4.Content
+5.Copy
+6.Personal Tutor
+7.Marketing Strategies
+8.HR
+9.Search Engine
+
+==> What is ChatGpt:- 
+-> ChatGPT is an Al chatbot developed by OpenAl that can talk with you and answer your questions. It understands and generates text based on the information it has learned. You can use it to get help with various topics, have conversations, or even get creative ideas. It's like chatting with a very knowledgeable friend.
+-> The introduction and explanation of a few topics is crucial for comprehending the session's objectives and enhancing overall understanding
+-> The full form of "ChatGPT" is "Chat Generative Pre- trained Transformer.
+
+==> What AI can do:-
+-> text to image [Mid journey,copilot]
+-> text to music [Uberduck,Suno ai] can develop music app
+-> text to presentation [Gamma AI] 
+-> text to movie or video [runway ml,sora ai,wonder dynamics]
+-> text to code [Copilot,Amazon CodeWhisperer]
+tool ==> HeyGen
+
+==> What is Prompt Engineering:- 
+-> Is a way human talk to ai to get what they want
+-> 25% of prompt engineering is communication.
+-> 50% of prompt engineering is prompt techniques.
+-> 25% of prompt engineering is using of AI tools.
+-> Prompt Engineering umans->Talk to Al in language that it could understand->Get the task done 25% is about Communication(making it understand your requirement) 50% is about Prompting Techniques(Chain of thought,Tree of thought etc.) Last 2596 is about Al Tools
+
+Avinash Mada
+Linkedin:
+https://www.linkedin.com/in
+avinash-mada
+Instagram:
+htt s:
+.insta ram.com
+meetavinash/?hl=en
+Freedom with Al
+Instagram
+http_s;LL_wwwj_nstagr_amco_mL
+freedom with ai
+LinkedIn
+https://www.linkedin.com/c
+om an reedomwithai
+Please be aware that if
+you've posted or tagged
+anything related to the
+masterclass or Avinash, our
+team will review it and send
+you the bonuses within the
+next 2-3 days.
+

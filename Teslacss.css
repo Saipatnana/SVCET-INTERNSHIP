@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.top {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-LHD-v2.jpg);
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.logo {
+
+    margin-left: 10px;
+    padding: 0px;
+
+}
+
+.center {
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.top2 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-Y-Desktop-Global.png);
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+
+}
+
+.text1 {
+    margin-top: 0px;
+    padding: 5px;
+}
+
+.top3 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-X-Desktop-v2.jpg);
+    /* background-attachment: fixed; */
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.top4 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-S-Desktop-v2.jpg);
+    /* background-attachment: fixed; */
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    color: white;
+}
+
+.top5 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-SolarPanels-01-Desktop);
+    /* background-attachment: fixed; */
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    color: white
+}
+
+.top6 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Homepage-SolarRoof-Desktop-Global);
+    /* background-attachment: fixed; */
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    color: black;
+}
+
+.top8 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Accessories-Desktop-NA-APAC.jpg);
+    /* background-attachment: fixed; */
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    color: black;
+}
+
+.top7 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Powerwall-01-Desktop.jpg);
+    /* background-attachment: fixed; */
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    color: black;
+}
+
+.button {
+    color: black;
+    background-color: white;
+    padding: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: Sans-Serif;
+}
+
+.head {
+    margin-top: 25%;
+    text-align: center;
+    width: 100%;
+
+}
+
+.h2 {
+    margin-top: 30%;
+    text-align: center;
+    width: 100%;
+}
+
+.button2 {
+    color: white;
+    background-color: black;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+#h3 {
+    text-align: center;
+    width: 70%;
+    margin-left: 20px;
+}
+
+#l1 {
+    margin-left: 100px;
+    width: 30%;
+}
+
+#l2 {
+    width: 30%;
+}
+
+#l3 {
+    width: 30%;
+}
+
+#l4 {
+    width: 30%;
+}
+
+#l5 {
+    width: 65%
+}
+
+.h5 {
+    display: flex;
+    align-items: center;
+}
+
+.last {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    padding: 0px;
+    background-size: cover;
+}

@@ -1,0 +1,98 @@
+/* Write your CSS code here */
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    color: white;
+}
+body{background: linear-gradient(135deg,purple,darkblue,black) no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 10vh;
+}
+h1{
+    margin: 0 40px; 
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 0;
+    border: 2px solid transparent;
+    filter: drop-shadow(2px 2px 4px transparent);
+
+}
+nav ul li a:hover{
+    border-bottom: 2px solid white;
+    transition: 0.5s;
+    filter: drop-shadow(2px 2px  4px white);
+
+}
+input{
+    width: 250px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    height: fit-content;
+    margin-right: 40px;
+    color: black;
+}
+
+.main{
+    margin-top: 2%;
+    margin-left: 60px;
+}
+.content{
+    margin-top: 10%;
+    margin-right: 12%;
+    float: right;
+}
+h2{
+    font-size: 45px;
+    color: white;
+}
+p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.btn{
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 40px;
+    font-size: 18px;
+    margin: 10px 0 ;
+    color: black;
+    filter: drop-shadow(2px 4px 4px transparent);
+
+}
+.btn:hover{
+    filter: drop-shadow(2px 4px 4px white);
+    transition: 0.5s;
+}
+.game{
+    margin-right: 20px;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    align-items: flex-end;
+}
+.links img{
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    width: 2vw;
+    height: 5vh;
+}

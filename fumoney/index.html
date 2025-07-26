@@ -1,0 +1,725 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <!-- Global site tag (gtag.js) - Google Analytics -->         
+        <script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		
+		ga('create', 'code_here', 'auto');
+		ga('send', 'pageview');
+	</script>         
+        <title>FnMoney - AI and Math in Finance</title>         
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        <meta name="description" content="Finaxiom"/> 
+        <meta name="author" content="Kadavul"> 
+        <meta charset="UTF-8"/> 
+        <link rel="icon" type="image/ico" href="favicon.ico"/>
+        <script src="https://kit.fontawesome.com/267c342729.js" crossorigin="anonymous"></script> 
+        <link href="style.css" rel="stylesheet"/> 
+        <link href="css/all.min.css" rel="stylesheet"/> 
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"> 
+    </head>     
+	<style>
+		.marquee-forward h1{
+			animation: marquee-forward 15s linear infinite;
+		}
+		@keyframes marquee-forward {
+			0%	{ 
+				-moz-transform: translateX(100%); /* Firefox bug fix */
+				-webkit-transform: translateX(100%); /* Firefox bug fix */
+				transform: translateX(100%);
+			}
+			100% { 
+				-moz-transform: translateX(-100%); /* Firefox bug fix */
+				-webkit-transform: translateX(-100%); /* Firefox bug fix */
+				transform: translateX(-100%); 
+			}
+		}
+	</style>
+    <body class="hidden hidden-ball smooth-scroll" data-primary-color="#ff0000"> 
+        <main> 
+            <!-- Preloader -->             
+            <div class="preloader-wrap" data-firstline="Stay" data-secondline="Relaxed"> 
+                <div class="outer"> 
+                    <div class="inner"> 
+                        <div class="trackbar"> 
+                            <ul class="preloader-intro"> 
+                                <li class="preloader-list">AI</li>                                 
+                                <li class="preloader-list">Math</li>                                 
+                                <li class="preloader-list">Finance</li>                                 
+                                <li class="preloader-list">Tax</li>                                 
+                                <li class="preloader-list">Freedom</li>                                 
+                            </ul>                             
+                            <div class="loadbar"></div>                             
+                        </div>                         
+                        <div class="percentage-wrapper">
+                            <div class="percentage" id="precent"></div>
+                        </div>                         
+                        <div class="percentage-intro">Please Wait</div>                         
+                    </div>                     
+                </div>                 
+            </div>             
+            <!--/Preloader -->             
+            <div class="cd-index cd-main-content"> 
+                <!-- Page Content -->                 
+                <div id="page-content" class="light-content" data-bgcolor="#171717"> 
+                    <!-- Header -->                     
+                    <header class="fullscreen-menu invert-header" data-menucolor="#171717"> 
+                        <div id="header-container"> 
+                            <!-- Logo -->                             
+                            <div id="logo" class="hide-ball"> 
+                                <a class="ajax-link" data-type="page-transition" href="/">  <img class="black-logo" src="images/logo.png" alt="FinAxiom">  <img class="white-logo" src="/images/logo-white.png" alt="FinAxiom"></a> 
+                            </div>                             
+                            <!--/Logo -->                             
+                            <!-- Navigation -->                             
+                            <nav> 
+                                <div class="nav-height"> 
+                                    <div class="outer"> 
+                                        <div class="inner"> 
+                                            <ul data-breakpoint="10025" class="flexnav"> 
+                                                <li class="link menu-timeline">
+                                                    <a class="" href="#"><div class="before-span">
+                                                            <span data-hover="Home">Home</span>
+                                                        </div></a> 
+                                                    <!--<ul> 
+                                                        <li>
+                                                            <a class="ajax-link active" href="index/index.html" data-type="page-transition">Landing Page</a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a class="ajax-link" href="index-showcase/index.html" data-type="page-transition">Showcase WebGL</a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a class="ajax-link" href="index-carousel/index.html" data-type="page-transition">Showcase Carousel</a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a class="ajax-link" href="portfolio-overlapping-grid/index.html" data-type="page-transition">Overlapping Portfolio</a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a class="ajax-link" href="portfolio-parallax-grid/index.html" data-type="page-transition">Parallax Portfolio</a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a class="ajax-link" href="portfolio-grid/index.html" data-type="page-transition">Random Portfolio</a>
+                                                        </li>                                                         
+                                                    </ul>-->                                                  
+                                                </li>                                                 
+                                                <li class="link menu-timeline">
+                                                    <a class="ajax-link" data-type="page-transition" href="/about/"><div class="before-span">
+                                                            <span data-hover="About">About</span>
+                                                        </div></a>
+                                                </li>                                                 
+                                                <li class="link menu-timeline">
+                                                    <a class="ajax-link" data-type="page-transition" href="/contact/"><div class="before-span">
+                                                            <span data-hover="Contact">Contact</span>
+                                                        </div></a>
+                                                </li>                                                 
+                                                <li class="link menu-timeline">
+                                                    <a class="" href="#"><div class="before-span">
+                                                            <span data-hover="More">More</span>
+                                                        </div></a> 
+                                                    <ul> 
+                                                        <li>
+                                                            <a class="ajax-link" href="/login/" data-type="page-transition">Login</a>
+                                                        </li>                                                         
+                                                        <li>
+                                                            <a class="ajax-link" href="/register/" data-type="page-transition">Register</a>
+                                                        </li>                                                         
+                                                        <!-- <li>
+                                                            <a class="ajax-link" href="shortcodes/index.html" data-type="page-transition">Shortcodes</a>
+                                                        </li>-->                                                         
+                                                    </ul>                                                     
+                                                </li>                                                 
+                                            </ul>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </nav>                             
+                            <!--/Navigation -->                             
+                            <!-- Menu Burger -->                             
+                            <div class="button-wrap right menu burger-lines"> 
+                                <div class="icon-wrap parallax-wrap"> 
+                                    <div class="button-icon parallax-element"> 
+                                        <div id="burger-wrapper"> 
+                                            <div id="menu-burger"> 
+                                                <span></span> 
+                                                <span></span> 
+                                                <span></span> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                </div>                                 
+                                <div class="button-text sticky right">
+                                    <span data-hover="Menu">Menu</span>
+                                </div>                                 
+                            </div>                             
+                            <!--/Menu Burger -->                             
+                        </div>                         
+                    </header>                     
+                    <!--/Header -->                     
+                    <!-- Content Scroll -->                     
+                    <div id="content-scroll"> 
+                        <!-- Main -->                         
+                        <div id="main"> 
+                            <!-- Hero Section -->                             
+                            <div id="hero" class="has-image"> 
+                                <div id="hero-styles"> 
+                                    <div id="hero-caption" class="content-max-width"> 
+                                        <div class="inner"> 
+                                            <div class="hero-arrow">
+                                                <i class="arrow-icon"></i>
+                                            </div>                                             
+                                            <div class="hero-subtitle">
+                                                <span>One stop Finance management</span>
+                                            </div>                                             
+                                            <div class="hero-title-wrapper">
+                                                <div class="hero-title">
+                                                    <span>Math &amp;</span> 
+                                                    <span>AI in Finance</span> 
+                                                </div>
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div id="hero-footer"> 
+                                        <div class="hero-footer-right"> 
+                                            <div class="button-wrap right scroll-down"> 
+                                                <div class="icon-wrap parallax-wrap"> 
+                                                    <div class="button-icon parallax-element"> 
+                                                        <i class="fa fa-angle-down">
+                        
+                                                        </i> 
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <div class="button-text sticky right">
+                                                    <span data-hover="Scroll Down">Scroll Down</span>
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div id="hero-description" class="content-max-width"> 
+                                        <div class="inner"> 
+                                            <div class="one_half"></div>                                             
+                                            <div class="one_half last"> 
+                                                <div class="hero-text">
+                                                    <span>Fnmoney analyses, designs and caters all your financial needs and assistance that drive results, build awareness and compliance. <br><br> Our work never brags, but it sure loves to speak for itself.</span>
+                                                </div>                                                 
+                                                <br> 
+                                                <div class="button-wrap right button-link large-btn has-animation"> 
+                                                    <div class="icon-wrap parallax-wrap"> 
+                                                        <div class="button-icon parallax-element"> 
+                                                            <i class="fa-solid fa-arrow-right"></i> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <a class="ajax-link" href="about/" data-type="page-transition"><div class="button-text sticky right">
+                                                            <span data-hover="Read More">Read More</span>
+                                                        </div></a> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                            <div id="hero-image-wrapper"> 
+                                <div id="hero-background-layer" class="parallax-scroll-image"> 
+                                    <div id="hero-bg-image" style="background-image:url(/images/02hero.jpg)"></div>                                     
+                                </div>                                 
+                            </div>                             
+                            <!--/Hero Section -->                             
+                            <!-- Main Content -->                             
+                            <div id="main-content"> 
+                                <!-- Main Page Content -->                                 
+                                <div id="main-page-content" class="content-max-width"> 
+                                    <!-- Row -->                                     
+                                    <div class="content-row full light-section" data-bgcolor="#fff"> 
+                                        <!-- Row -->                                         
+                                        <div class="content-row fadeout-element row_padding_top light-section change-header-color" data-bgcolor="#fff"> 
+                                            <div class="one_half"> 
+                                                <h4 class="has-mask-fill">AI</h4> 
+                                                <p class="has-animation" data-delay="50">Harness the power of AI and MATH with FnMoney and leap forth into the future.</p> 
+                                            </div>                                             
+                                            <div class="one_half last"></div>                                             
+                                            <hr class="destroy"> 
+                                        </div>                                         
+                                        <!--/Row -->                                         
+                                        <!-- Row -->                                         
+                                        <div class="content-row fadeout-element light-section change-header-color" data-bgcolor="#fff"> 
+                                            <div class="marquee-text-wrapper marquee-forward"> 
+                                                <h1 class="big-title bw">Power of AI and Math for everyone everytime</h1>
+                                            </div>                                             
+                                        </div>                                         
+                                        <!--/Row -->                                         
+                                        <!-- Row -->                                         
+                                        <div class="content-row row_padding_top row_padding_bottom light-section change-header-color full" data-bgcolor="#fff"> 
+                                            <!-- Portfolio Wrap -->                                             
+                                            <div id="itemsWrapperLinks" class="portfolio-wrap parallax-two-grid content-max-width fade-scaleout-effect"> 
+                                                <!-- Portfolio Columns -->                                                 
+                                                <div id="itemsWrapper" class="portfolio portfolio-shortcode webgl-fitthumbs fx-three"> 
+                                                    <div class="item trigger-item branding design" data-color="#95121e" data-firstline="View" data-secondline="Project" data-scrub="0.2"> 
+                                                        <div class="item-parallax"> 
+                                                            <div class="item-appear"> 
+                                                                <div class="item-content"> 
+                                                                    <a class="item-wrap ajax-link-project" data-type="page-transition" href="/fntax"></a> 
+                                                                    <div class="item-wrap-image"> 
+                                                                        <img src="images/taxcalc.jpg" class="item-image grid__item-img trigger-item-link" alt=""> 
+                                                                    </div>                                                                     
+                                                                    <img class="grid__item-img grid__item-img--large" src="images/02hero.jpg" alt=""/> 
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                            <div class="item-caption-wrapper"> 
+                                                                <div class="item-caption"> 
+                                                                    <div class="item-arrow">
+                                                                        <i class="arrow-icon"></i>
+                                                                    </div>                                                                     
+                                                                    <!-- <div class="item-date">2022</div>  -->                                                                   
+                                                                    <div class="item-cat">FnTax</div>                                                                     
+                                                                    <div class="item-title">
+                                                                        <!-- <span>The</span> -->
+                                                                        <span>Taxes (Fntax)</span> 
+                                                                        <span>TDS, GST, Income Tax</span>
+                                                                    </div>                                                                     
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <div class="item vertical-parallax trigger-item design photo" data-color="#963a8d" data-firstline="View" data-secondline="Project" data-scrub="0.5"> 
+                                                        <div class="item-parallax"> 
+                                                            <div class="item-appear"> 
+                                                                <div class="item-content"> 
+                                                                    <a class="item-wrap ajax-link-project" data-type="page-transition" href="/fntax"></a> 
+                                                                    <div class="item-wrap-image"> 
+                                                                        <img src="images/accounts.jpg" class="item-image grid__item-img trigger-item-link" alt=""> 
+                                                                    </div>                                                                     
+                                                                    <img class="grid__item-img grid__item-img--large" src="images/02hero.jpg" alt=""/> 
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                            <div class="item-caption-wrapper"> 
+                                                                <div class="item-caption"> 
+                                                                    <div class="item-arrow">
+                                                                        <i class="arrow-icon"></i>
+                                                                    </div>                                                                     
+                                                                    <!-- <div class="item-date">2022</div> -->                                                                     
+                                                                    <div class="item-cat">Accounts</div>                                                                     
+                                                                    <div class="item-title">
+                                                                        <span>Let AI take care of </span> 
+                                                                        <span>Your accounts</span>
+                                                                    </div>                                                                     
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <div class="item vertical-parallax trigger-item design photo" data-color="#95121e" data-firstline="View" data-secondline="Project" data-scrub="0.2"> 
+                                                        <div class="item-parallax"> 
+                                                            <div class="item-appear"> 
+                                                                <div class="item-content"> 
+                                                                    <a class="item-wrap ajax-link-project" data-type="page-transition" href="/fntax"></a> 
+                                                                    <div class="item-wrap-image"> 
+                                                                        <img src="images/compliant.jpg" class="item-image grid__item-img trigger-item-link" alt=""> 
+                                                                    </div>                                                                     
+                                                                    <img class="grid__item-img grid__item-img--large" src="images/02hero.jpg" alt=""/> 
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                            <div class="item-caption-wrapper"> 
+                                                                <div class="item-caption"> 
+                                                                    <div class="item-arrow">
+                                                                        <i class="arrow-icon"></i>
+                                                                    </div>                                                                     
+                                                                    <!-- <div class="item-date">2022</div> -->                                                                     
+                                                                    <div class="item-cat">Compliance</div>                                                                     
+                                                                    <div class="item-title">
+                                                                        <!-- <span>Eames</span> -->
+                                                                        <span>Be compliant always</span> 
+                                                                        <span>with AI</span>
+                                                                    </div>                                                                     
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <div class="item trigger-item video" data-color="#3d5662" data-firstline="View" data-secondline="Project" data-scrub="0.5"> 
+                                                        <div class="item-parallax"> 
+                                                            <div class="item-appear"> 
+                                                                <div class="item-content"> 
+                                                                    <a class="item-wrap ajax-link-project" data-type="page-transition" href="/fntax"></a> 
+                                                                    <div class="item-wrap-image"> 
+                                                                        <img src="images/fire.jpg" class="item-image grid__item-img trigger-item-link" alt=""> 
+                                                                    </div>                                                                     
+                                                                    <img class="grid__item-img grid__item-img--large" src="images/02hero.jpg" alt=""/> 
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                            <div class="item-caption-wrapper"> 
+                                                                <div class="item-caption"> 
+                                                                    <div class="item-arrow">
+                                                                        <i class="arrow-icon"></i>
+                                                                    </div>                                                                     
+                                                                    <!-- <div class="item-date">2022</div> -->                                                                   
+                                                                    <div class="item-cat">FIRE</div>                                                                     
+                                                                    <div class="item-title">
+                                                                        <span>Heart</span> 
+                                                                        <span>Of Personal finance</span>
+                                                                    </div>                                                                     
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <!--/Portfolio -->                                                 
+                                            </div>                                             
+                                            <!--/Portfolio Wrap -->                                             
+                                        </div>                                         
+                                        <!--/Row -->                                         
+                                        <!-- Row -->                                         
+                                        <div class="content-row fadeout-element row_padding_bottom light-section change-header-color" data-bgcolor="#fff"> 
+                                            <hr> 
+                                            <div class="one_half"> 
+                                                <h3 class="has-mask-fill no-margins">Still Need</h3> 
+                                                <h3 class="has-mask-fill">Clarifications?</h3> 
+                                                <hr> 
+                                                <div class="button-wrap right button-link large-btn has-animation"> 
+                                                    <div class="icon-wrap parallax-wrap"> 
+                                                        <div class="button-icon parallax-element"> 
+                                                            <i class="fa-solid fa-arrow-right"></i> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <a class="ajax-link" href="/contact" data-type="page-transition"><div class="button-text sticky right">
+                                                            <span data-hover="View all Works">Contact Us</span>
+                                                        </div></a> 
+                                                </div>                                                 
+                                            </div>                                             
+                                            <div class="one_half last"></div>                                             
+                                        </div>                                         
+                                        <!--/Row -->                                         
+                                    </div>                                     
+                                    <!--/Row -->                                     
+                                    <!-- Row -->                                     
+                                    <div class="content-row full dark-section text-align-center" data-bgcolor="#171717"> 
+                                        <div class="slowed-pin"> 
+                                            <div class="slowed-text"> 
+                                                <h5>Recent Engagements</h5> 
+                                                <h1 class=" big-title">We've performed hundreds of successful finance management and plans for our clients.</h1> 
+                                                <hr> 
+                                                <h5>Power of AI and Math for everyone  <br class="destroy"> everytime.</h5> 
+                                            </div>                                             
+                                            <div class="slowed-images"> 
+                                                <div class="slowed-image-left"> 
+                                                    <img src="images/studio01.jpg" class="link" alt="Image"> 
+                                                </div>                                                 
+                                                <div class="slowed-image-right"> 
+                                                    <img src="images/studio02.jpg" class="link" alt="Image"> 
+                                                </div>                                                 
+                                                <div class="slowed-image-left"> 
+                                                    <img src="images/studio03.jpg" class="link" alt="Image"> 
+                                                </div>                                                 
+                                                <div class="slowed-image-right"> 
+                                                    <img src="images/studio04.jpg" class="link" alt="Image"> 
+                                                </div>                                                 
+                                                <div class="slowed-image-left"> 
+                                                    <img src="images/studio01.jpg" class="link" alt="Image"> 
+                                                </div>                                                 
+                                                <div class="slowed-image-right"> 
+                                                    <img src="images/studio02.jpg" class="link" alt="Image"> 
+                                                </div>                                                 
+                                                <div class="slowed-image-left"> 
+                                                    <img src="images/studio03.jpg" class="link" alt="Image"> 
+                                                </div>                                                 
+                                                <div class="slowed-image-right"> 
+                                                    <img src="images/studio04.jpg" class="link" alt="Image"> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <!--/Row -->                                     
+                                    <!-- Row -->                                     
+                                    <!-- <div class="content-row full light-section" data-bgcolor="#fff">--> 
+                                        <!-- Row -->                                         
+                                        <!-- <div class="content-row row_padding_top light-section change-header-color" data-bgcolor="#fff"> 
+                                            <hr> 
+                                            <div class="one_half"> 
+                                                <h1 class="has-mask-fill no-margins">News</h1> 
+                                                <h1 class="has-mask-fill">Featured</h1> 
+                                                <hr> 
+                                                <p class="has-animation" data-delay="0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form by injected humour.</p> 
+                                            </div>                                             
+                                            <div class="one_half last"></div>                                             
+                                        </div>                                         
+                                        <!--/Row -->                                         
+                                        <!-- Row -->                                         
+                                        <!-- <div class="content-row light-section full change-header-color" data-bgcolor="#fff"> 
+                                            <div class="panels news-panel"> 
+                                                <div class="panels-container"> 
+                                                    <div class="panel" data-color="#000" data-firstline="Read" data-secondline="Story"> 
+                                                        <div class="panel-content-wrapper"> 
+                                                            <div class="panel-image"> 
+                                                                <a class="ajax-link" href="index/index.html" data-type="page-transition"><img src="images/news01.jpg"></a> 
+                                                            </div>                                                             
+                                                            <div class="panel-content"> 
+                                                                <div class="entry-meta entry-categories"> 
+                                                                    <ul class="post-categories"> 
+                                                                        <li class="link">
+                                                                            <a href="#"><span data-hover="Insights">Insights</span></a>
+                                                                        </li>                                                                         
+                                                                        <li class="link">
+                                                                            <a href="#"><span data-hover="Nature">Nature</span></a>
+                                                                        </li>                                                                         
+                                                                    </ul>                                                                     
+                                                                </div>                                                                 
+                                                                <div class="news-panel-title">
+                                                                    <span>We are thrilled to be nominated for the Agency of the Year</span>
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <div class="panel" data-color="#000" data-firstline="Read" data-secondline="Story"> 
+                                                        <div class="panel-content-wrapper"> 
+                                                            <div class="panel-image"> 
+                                                                <a class="ajax-link" href="index/index.html" data-type="page-transition"><img src="images/news02.jpg"></a> 
+                                                            </div>                                                             
+                                                            <div class="panel-content"> 
+                                                                <div class="entry-meta entry-categories"> 
+                                                                    <ul class="post-categories"> 
+                                                                        <li class="link">
+                                                                            <a href="#"><span data-hover="Insights">Insights</span></a>
+                                                                        </li>                                                                         
+                                                                        <li class="link">
+                                                                            <a href="#"><span data-hover="Work">Work</span></a>
+                                                                        </li>                                                                         
+                                                                    </ul>                                                                     
+                                                                </div>                                                                 
+                                                                <div class="news-panel-title">
+                                                                    <span>How we approached our own website redesign</span>
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <div class="panel" data-color="#000" data-firstline="Read" data-secondline="Story"> 
+                                                        <div class="panel-content-wrapper"> 
+                                                            <div class="panel-image"> 
+                                                                <a class="ajax-link" href="index/index.html" data-type="page-transition"><img src="images/news03.jpg"></a> 
+                                                            </div>                                                             
+                                                            <div class="panel-content"> 
+                                                                <div class="entry-meta entry-categories"> 
+                                                                    <ul class="post-categories"> 
+                                                                        <li class="link">
+                                                                            <a href="#"><span data-hover="Insights">Insights</span></a>
+                                                                        </li>                                                                         
+                                                                        <li class="link">
+                                                                            <a href="#"><span data-hover="Work">Work</span></a>
+                                                                        </li>                                                                         
+                                                                    </ul>                                                                     
+                                                                </div>                                                                 
+                                                                <div class="news-panel-title">
+                                                                    <span>We are thrilled to be nominated for the Agency of the Year</span>
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <div class="panel change-header" data-color="#000" data-firstline="Read" data-secondline="Story"> 
+                                                        <div class="panel-content-wrapper"> 
+                                                            <div class="panel-image"> 
+                                                                <a class="ajax-link" href="index/index.html" data-type="page-transition"><img src="images/news04.jpg"></a> 
+                                                            </div>                                                             
+                                                            <div class="panel-content"> 
+                                                                <div class="entry-meta entry-categories"> 
+                                                                    <ul class="post-categories"> 
+                                                                        <li class="link">
+                                                                            <a href="#"><span data-hover="Insights">Insights</span></a>
+                                                                        </li>                                                                         
+                                                                        <li class="link">
+                                                                            <a href="#"><span data-hover="Work">Work</span></a>
+                                                                        </li>                                                                         
+                                                                    </ul>                                                                     
+                                                                </div>                                                                 
+                                                                <div class="news-panel-title">
+                                                                    <span>How we approached our own website redesign</span>
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <div class="panel" data-color="#000" data-firstline="Read" data-secondline="Story"> 
+                                                        <div class="panel-content-wrapper"> 
+                                                            <div class="panel-image"> 
+                                                                <a class="ajax-link" href="index/index.html" data-type="page-transition"><img src="images/news05.jpg"></a> 
+                                                            </div>                                                             
+                                                            <div class="panel-content"> 
+                                                                <div class="entry-meta entry-categories"> 
+                                                                    <ul class="post-categories"> 
+                                                                        <li class="link">
+                                                                            <a href="#"><span data-hover="Insights">Insights</span></a>
+                                                                        </li>                                                                         
+                                                                        <li class="link">
+                                                                            <a href="#"><span data-hover="Work">Work</span></a>
+                                                                        </li>                                                                         
+                                                                    </ul>                                                                     
+                                                                </div>                                                                 
+                                                                <div class="news-panel-title">
+                                                                    <span>We are thrilled to be nominated for the Agency of the Year</span>
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <div class="panel" data-color="#000" data-firstline="Read" data-secondline="Story"> 
+                                                        <div class="panel-content-wrapper"> 
+                                                            <div class="panel-image"> 
+                                                                <a class="ajax-link" href="index/index.html" data-type="page-transition"><img src="images/news06.jpg"></a> 
+                                                            </div>                                                             
+                                                            <div class="panel-content"> 
+                                                                <div class="entry-meta entry-categories"> 
+                                                                    <ul class="post-categories"> 
+                                                                        <li class="link">
+                                                                            <a href="#"><span data-hover="Insights">Insights</span></a>
+                                                                        </li>                                                                         
+                                                                        <li class="link">
+                                                                            <a href="#"><span data-hover="Work">Work</span></a>
+                                                                        </li>                                                                         
+                                                                    </ul>                                                                     
+                                                                </div>                                                                 
+                                                                <div class="news-panel-title">
+                                                                    <span>How we approached our own website redesign</span>
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                        <!--/Row -->                                         
+                                        <!-- Row -->                                         
+                                        <!--<div class="content-row row_padding_bottom light-section change-header-color" data-bgcolor="#fff"> 
+                                            <hr> 
+                                            <div class="one_half"> 
+                                                <h3 class="has-mask-fill no-margins">Read</h3> 
+                                                <h3 class="has-mask-fill">All Stories</h3> 
+                                                <hr> 
+                                                <div class="button-wrap right button-link large-btn has-animation"> 
+                                                    <div class="icon-wrap parallax-wrap"> 
+                                                        <div class="button-icon parallax-element"> 
+                                                            <i class="fa-solid fa-arrow-right"></i> 
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <a class="ajax-link" href="portfolio-grid/index.html" data-type="page-transition"><div class="button-text sticky right">
+                                                            <span data-hover="Go To Blog">Go To Blog</span>
+                                                        </div></a> 
+                                                </div>                                                 
+                                            </div>                                             
+                                            <div class="one_half last"></div>                                             
+                                        </div>-->                                         
+                                        <!--/Row -->                                         
+                                   <!-- </div> -->                                    
+                                    <!--/Row -->                                     
+                                </div>                                 
+                                <!--/Main Page Content -->                                 
+                                <!-- Page Navigation -->                                 
+                                <div id="page-nav"> 
+                                    <div class="page-nav-wrap"> 
+                                        <div class="page-nav-caption content-max-width block-title marquee-title"> 
+                                            <div class="inner"> 
+                                                <div class="hero-arrow">
+                                                    <i class="arrow-icon"></i>
+                                                </div>                                                 
+                                                <div class="next-hero-subtitle">
+                                                    <span>About our Agency</span>
+                                                </div>                                                 
+                                                <a class="page-title next-ajax-link-page" data-type="page-transition" data-firstline="Next" data-secondline="Page" href="/about">  <div class="next-hero-title-wrapper">
+                                                        <div class="next-hero-title">
+                                                            <span>FnMoney for the future of finance -</span>
+                                                        </div>
+                                                    </div>  </a> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                </div>                                 
+                                <!--/Page Navigation -->                                 
+                            </div>                             
+                            <!--/Main Content -->                             
+                        </div>                         
+                        <!--/Main -->                         
+                        <!-- Footer -->                         
+                        <footer class="hidden"> 
+                            <div id="footer-container"> 
+                                <div id="backtotop" class="button-wrap left"> 
+                                    <div class="icon-wrap parallax-wrap"> 
+                                        <div class="button-icon parallax-element"> 
+                                            <i class="fa-solid fa-angle-up"></i> 
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="button-text sticky left">
+                                        <span data-hover="Back Top">Back Top</span>
+                                    </div>                                     
+                                </div>                                 
+                                <div class="footer-middle"> 
+                                    <div class="copyright">2023 © 
+                                        <a class="link" target="_blank" href="#">FnMoney</a>. All rights reserved.
+                                    </div>                                     
+                                </div>                                 
+                                <div class="socials-wrap"> 
+                                    <div class="socials-icon">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </div>                                     
+                                    <div class="socials-text">Follow Us</div>                                     
+                                    <ul class="socials"> 
+                                        <!--<li>
+                                            <span class="parallax-wrap"><a class="parallax-element" href="https://www.dribbble.com/" target="_blank">Db</a></span>
+                                        </li>-->                                        
+                                        <li>
+                                            <span class="parallax-wrap"><a class="parallax-element" href="https://www.twitter.com/" target="_blank">Tw</a></span>
+                                        </li>                                         
+                                        <!--<li>
+                                            <span class="parallax-wrap"><a class="parallax-element" href="https://www.behance.com/" target="_blank">Be</a></span>
+                                        </li>-->                                         
+                                        <li>
+                                            <span class="parallax-wrap"><a class="parallax-element" href="https://www.facebook.com/" target="_blank">Fb</a></span>
+                                        </li>                                         
+                                        <li>
+                                            <span class="parallax-wrap"><a class="parallax-element" href="https://www.instagram.com/">In</a></span>
+                                        </li>                                         
+                                    </ul>                                     
+                                </div>                                 
+                            </div>                             
+                        </footer>                         
+                        <!--/Footer -->                         
+                    </div>                     
+                    <!--/Content Scroll -->                     
+                    <div class="thumb-wrapper"> 
+                        <div class="thumb-container"> 
+                            <div class="thumb-page" data-src="images/01hero.jpg"></div>                             
+                            <div class="thumb-page" data-src="images/02hero.jpg"></div>                             
+                            <div class="thumb-page" data-src="images/03hero.jpg"></div>                             
+                            <div class="thumb-page" data-src="images/04hero.jpg"></div>                             
+                            <div class="thumb-page" data-src="images/05hero.jpg"></div>                             
+                            <div class="thumb-page" data-src="images/06hero.jpg"></div>                             
+                        </div>                         
+                    </div>                     
+                    <div id="app"></div>                     
+                </div>                 
+                <!--/Page Content -->                 
+            </div>             
+        </main>         
+        <div class="cd-cover-layer"></div>         
+        <div id="magic-cursor"> 
+            <div id="ball"> 
+                <div id="ball-drag-x"></div>                 
+                <div id="ball-drag-y"></div>                 
+                <div id="ball-loader"></div>                 
+            </div>             
+        </div>         
+        <div id="clone-image"> 
+            <div class="hero-translate"></div>             
+        </div>         
+        <div id="rotate-device"></div>         
+        <script src="js/jquery.min.js"></script>         
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>         
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>         
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>         
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js"></script>         
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/EasePack.min.js"></script>         
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>         
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>         
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js'></script>         
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js'></script>         
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpK1sWi3J3EbUOkF_K4-UHzi285HyFX5M&amp;sensor=false"></script>         
+        <script src="js/clapatwebgl.js"></script>         
+        <script src="js/plugins.js"></script>         
+        <script src="js/common.js"></script>         
+        <script src="js/contact.js"></script>         
+        <script src="js/scripts.js"></script>         
+    </body>        
+</html>
